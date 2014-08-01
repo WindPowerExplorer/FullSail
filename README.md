@@ -1,4 +1,3 @@
-FullSail
-========
+##FullSail
 
-Wind Power Explorer Systems
+This repository holds the _Wind Power Explorer_ deployable systems
