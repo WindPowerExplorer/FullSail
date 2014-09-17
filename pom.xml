@@ -1,29 +1,18 @@
-<!-- Copyright (c) 2014. Donald Trummell. All Rights Reserved. Permission
-        to use, copy, modify, and distribute this software and its documentation
-        for educational, research, and not-for-profit purposes, without fee and without
-        a signed licensing agreement, is hereby granted, provided that the above
-        copyright notice, and this paragraph, appear in all copies, modifications,
-        and distributions. Contact dtrummell@gmail.com for commercial licensing opportunities. -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
         <modelVersion>4.0.0</modelVersion>
 
-        <groupId>demodev.topics</groupId>
-        <artifactId>demodev-topics-parent</artifactId>
-        <name>Demonstration of Development _TOPICS_</name>
-        <description>Parent Project for DemoDev</description>
+        <groupId>org.wpe.fullsail</groupId>
+        <artifactId>wpe-fullsail-parent</artifactId>
+        <name>Wind Power Explorer _FULLSAIL_ Release</name>
+        <description>Parent Project for Wind Power Explorer, FullSail Release</description>
 
         <packaging>pom</packaging>
         <version>1.0.0-SNAPSHOT</version>
         <url>http://www.linkedin.com/in/donaldtrummell/</url>
 
         <modules>
-                <module>dev-topics-utils</module>
-                <module>dev-topics-hacks</module>
-                <module>dev-topics-jerseyservices</module>
-                <module>dev-topics-codingexams</module>
-                <module>dev-topics-memoryindexing</module>
-                <module>dev-topics-nosql</module>
+                <module>wpe-tools-shared</module>
         </modules>
 
         <prerequisites>
@@ -114,7 +103,7 @@
                                         <configuration>
                                                 <useDefaultManifestFile>true</useDefaultManifestFile>
                                         </configuration>
-                                        <!-- <configuration> <archive> <manifest> <mainClass>demo.DemoDev</mainClass>
+                                        <!-- <configuration> <archive> <manifest> <mainClass>mainpgk.MainClass</mainClass>
                                                 </manifest> </archive> </configuration> -->
                                 </plugin>
 
