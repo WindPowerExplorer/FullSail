@@ -20,6 +20,7 @@
 	<modules>
 		<module>wpe-tools-testingutils</module>
 		<module>wpe-tools-api</module>
+		<module>wpe-tools-functioneval</module>
 	</modules>
 
 	<properties>
