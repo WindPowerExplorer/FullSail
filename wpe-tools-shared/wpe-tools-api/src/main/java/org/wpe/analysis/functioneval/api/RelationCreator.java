@@ -2,6 +2,8 @@ package org.wpe.analysis.functioneval.api;
 
 import java.util.List;
 
+import org.wpe.analysis.functioneval.impl.RelationBean;
+
 /**
  * Input points are feed to the function evaluator {@code Function}, and the
  * function output is stored with its input in a {@code Relation}.
@@ -37,5 +39,5 @@ public interface RelationCreator<Y, X>
    * 
    * @return the list of input-output value pairings defining the relation.
    */
-  public abstract List<Relation<Y, X>> generateValues(List<List<X>> inputs);
+  public abstract List<RelationBean<Y, X>> generateValues(List<List<X>> inputs);
 }

@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.wpe.analysis.functioneval.api.Function;
-import org.wpe.analysis.functioneval.api.Relation;
 import org.wpe.analysis.functioneval.api.RelationCreator;
 
 /**
@@ -32,7 +31,7 @@ public class TemplateFunctionEvaluator<Y, X> implements RelationCreator<Y, X>
   }
 
   @Override
-  public List<Relation<Y, X>> generateValues(final List<List<X>> inputs)
+  public List<RelationBean<Y, X>> generateValues(final List<List<X>> inputs)
   {
     if (inputs == null)
       throw new IllegalArgumentException("inputs null");
@@ -43,11 +42,11 @@ public class TemplateFunctionEvaluator<Y, X> implements RelationCreator<Y, X>
     if (functionEvaluator == null)
       throw new IllegalStateException("no function evaluator provided");
 
-    final List<Relation<Y, X>> results = new ArrayList<Relation<Y, X>>();
+    final List<RelationBean<Y, X>> results = new ArrayList<RelationBean<Y, X>>();
 
     for (final List<X> vector : inputs)
       results
-          .add(new Relation<Y, X>(functionEvaluator.evaluate(vector), vector));
+          .add(new RelationBean<Y, X>(functionEvaluator.evaluate(vector), vector));
 
     return results;
   }

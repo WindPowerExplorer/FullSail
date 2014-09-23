@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import org.wpe.analysis.functioneval.api.Relation;
+import org.wpe.analysis.functioneval.impl.RelationBean;
 import org.wpe.analysis.functioneval.impl.TemplateFunctionEvaluator;
 
 /**
@@ -34,7 +34,7 @@ public class Evaluator
     inputs.add(Arrays.asList(1.0, 22.2, 33.3));
     inputs.add(Arrays.asList(2.0, 44.4, 55.5));
 
-    final List<Relation<Double, Double>> mapping = eval.generateValues(inputs);
+    final List<RelationBean<Double, Double>> mapping = eval.generateValues(inputs);
     System.out.println("Got: " + mapping);
   }
 }
