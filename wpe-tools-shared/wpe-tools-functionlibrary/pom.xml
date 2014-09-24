@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
+
+        <parent>
+                <groupId>org.wpe.fullsail</groupId>
+                <artifactId>wpe-shared-parent</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+        </parent>
+
+        <artifactId>wpe-tools-functionlibrary</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
+        <packaging>jar</packaging>
+        <name>Library of Analytic Functions</name>
+
+        <description>Shared Analytic Function Definitions</description>
+
+        <properties>
+        </properties>
+
+        <dependencies>
+                <!-- API Artifacts -->
+                <dependency>
+                        <groupId>org.wpe.fullsail</groupId>
+                        <artifactId>wpe-tools-api</artifactId>
+                        <version>1.0.0-SNAPSHOT</version>
+                </dependency>
+
+                <!-- Test Artifacts -->
+                <dependency>
+                        <groupId>org.wpe.fullsail</groupId>
+                        <artifactId>wpe-tools-vtestingutils</artifactId>
+                        <version>1.0.0-SNAPSHOT</version>
+                        <scope>test</scope>
+                </dependency>
+        </dependencies>
+
+        <build>
+                <pluginManagement>
+                        <plugins>
+                        </plugins>
+                </pluginManagement>
+        </build>
+</project>

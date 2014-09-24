@@ -1,38 +1,39 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>org.wpe.fullsail</groupId>
-		<artifactId>wpe-fullsail-parent</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
+        <parent>
+                <groupId>org.wpe.fullsail</groupId>
+                <artifactId>wpe-fullsail-parent</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+        </parent>
 
-	<groupId>org.wpe.fullsail</groupId>
-	<artifactId>wpe-shared-parent</artifactId>
-	<name>Shared API and Utilities _SHARED_</name>
-	<description>Parent Project for SHARED</description>
+        <groupId>org.wpe.fullsail</groupId>
+        <artifactId>wpe-shared-parent</artifactId>
+        <name>Shared API and Utilities _SHARED_</name>
+        <description>Parent Project for SHARED</description>
 
-	<packaging>pom</packaging>
-	<version>1.0.0-SNAPSHOT</version>
-	<url>http://www.linkedin.com/in/donaldtrummell/</url>
+        <packaging>pom</packaging>
+        <version>1.0.0-SNAPSHOT</version>
+        <url>http://www.linkedin.com/in/donaldtrummell/</url>
 
-	<modules>
-		<module>wpe-tools-testingutils</module>
-		<module>wpe-tools-api</module>
-		<module>wpe-tools-functioneval</module>
-	</modules>
+        <modules>
+                <module>wpe-tools-testingutils</module>
+                <module>wpe-tools-api</module>
+                <module>wpe-tools-functionlibrary</module>
+                <module>wpe-tools-functioneval</module>
+        </modules>
 
-	<properties>
-	</properties>
+        <properties>
+        </properties>
 
-	<dependencies>
-	</dependencies>
+        <dependencies>
+        </dependencies>
 
-	<build>
-		<pluginManagement>
-			<plugins>
-			</plugins>
-		</pluginManagement>
-	</build>
+        <build>
+                <pluginManagement>
+                        <plugins>
+                        </plugins>
+                </pluginManagement>
+        </build>
 </project>
