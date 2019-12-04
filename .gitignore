@@ -42,6 +42,28 @@ local.properties
 .buildpath
 
 #################
+## PyCharm
+#################
+
+.idea/
+virtualenv/
+venv/
+
+
+#################
+## Intellij
+#################
+*.iml
+
+
+#################
+## RStudio
+#################
+*.Rproj
+.Rhistory
+.RData
+
+#################
 ## Visual Studio
 #################
 
@@ -177,10 +199,10 @@ UpgradeLog*.htm
 App_Data/*.mdf
 App_Data/*.ldf
 
+
 #############
 ## Windows detritus
 #############
-
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -198,7 +220,6 @@ $RECYCLE.BIN/
 #############
 ## Python
 #############
-
 *.py[co]
 
 # Packages
@@ -226,3 +247,19 @@ pip-log.txt
 #Mr Developer
 .mr.developer.cfg
 /classes
+
+#############
+## Gradle
+#############
+.gradle*
+*taskArtifacts*
+
+#############
+## Maven
+#############
+dependency-reduced-pom.xml
+
+#############
+## Jersey
+#############
+MANIFEST.MF

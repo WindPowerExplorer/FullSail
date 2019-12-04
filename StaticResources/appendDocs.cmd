@@ -1,5 +1,5 @@
 ::
-: appendDocs.cmd - 2014.8.11
+: appendDocs.cmd - 2019.12.3
 :
 : Assemble README.md from docs sub-directory
 ::
@@ -27,7 +27,7 @@ goto finis
 
 :
 :xx_setup_files
-set XX_srcDir=..\docs\
+set XX_srcDir=..\docs_sources\
 set XX_masterFile=README.md
 set XX_targetDir=..\
 set XX_allDocs=%XX_targetDir%%XX_masterFile%
@@ -45,6 +45,7 @@ goto finis
 :
 :finis
 echo. **** Assembling README.md completed
+copy /a %XX_targetDir%%XX_masterFile% ..\docs\%XX_masterFile%
 if defined XX_CurDir popd %XX_CurDir%
 
 set XX_CurDir=
