@@ -1,12 +1,18 @@
 # Welcome
 
-These *FullSail* projects help evaluate the prospective power output of a Wind Farm. A *Wind Farm* has a collection of *Wind Generators* that output electrical power, which varies depending on wind characteristics and individual generator placement. Because there are large capital investments required to create a wind farm, and significant regulatory compliance issues, it is important to optimize power output for a given investment. Investors must be assured of the eventual payoff for investing in the farm. These goals are achieved with good data about predicted power generation.
+The software associated with the ***Wind Power Explorer*** is located in this (the [http://www.github.com/DonaldET/FullSail/](http://www.github.com/DonaldET/FullSail/ "FullSail") ) repository. This repository also depends on components developed in the [https://github.com/DonaldET/DemoDev/](https://github.com/DonaldET/DemoDev/ "DemoDev repo"). This software aids in planning a Wind Farm, which is a collection of Wind Generators placed in fixed positions on a rectangular grid of (nearly) flat land or over the ocean.
 
-Unfortunately, data for validating the economics of a particular wind farm site are difficult to obtain. Since complete wind characteristics are often unavailable, and the Engineering models of wind power generation are often complicated, it is difficult to perform an exact power analysis. Most of detailed engineering analyses are compute-intensive, and solved on a single machine, large time periods (e.g., a year) are not simulated.
+#### Background of Need
+
+Because there are large capital investments required to create a wind farm, and significant regulatory compliance issues, it is important to optimize power output for a given investment. Investors must be assured of the eventual payoff for investing in the farm. These goals are achieved with good data about predicted power generation.
+
+These *FullSail* projects help evaluate the prospective power output of a Wind Farm. A *Wind Farm* is a collection of *Wind Generators* that output electrical power of a long period of time. The power output varies depending on wind characteristics, generator characteristics, and individual generator placement. 
+
+Unfortunately, data for validating the economics of a particular wind farm site are difficult to obtain. Since complete wind characteristics are often unavailable, and the Engineering models of wind power generation are often complicated, it is difficult to perform an exact power analysis. Most of detailed engineering analyses are compute-intensive, and solved on a single machine, so large time periods (e.g., a year) are not typically simulated. One is forced to reason about Wind Farm power output over a long period of capitalization by using short time periods and hoping the results are representative of the time period under study.
 
 #### The *FullSail* Approach
 
-FullSail applies "Big Data" concepts and 
+FullSail applies "Big Data" concepts and TBD
 
 #### Repository Contents
 
@@ -26,60 +32,22 @@ There are far too many Maven tutorials to mention here, so please search the web
 
 #### Java Requirement
 
-Most of *DemoDev* is built using Java 8, but Java 9 introduced the REPL (Run-Execute-Print-Loop); an interactive Java runtime environment. Many of us are still tied to Java 8 for business reasons, but would like to experiment with the REPL. This site, https://github.com/javaterminal/tryjshell, offers a browser-accessible version of the REPL. They provide a hosted version at https://tryjshell.org/.
+Most of *FullSail* is built using Java 8, but Java 9 introduced the REPL (Run-Execute-Print-Loop); an interactive Java runtime environment. Many of us are still tied to Java 8 for business reasons, but would like to experiment with the REPL. This site, https://github.com/javaterminal/tryjshell, offers a browser-accessible version of the REPL. They provide a hosted version at https://tryjshell.org/.
 
-#### Java and Python Coding Practice, Data Management Free Resources 
+#### *FullSail* Content Commercial Opportunities
 
-Here are some educational web sites for testing your Java and Python coding skills:
-
-- [https://www.hackerrank.com/](https://www.hackerrank.com/ "Hacker Rank"), test problems and competitive scoring.
-- [https://leetcode.com/](https://leetcode.com/ "Leet Code"), presenting problems and solutions in a peer-reviewed development environment.
-- [https://coderpad.io/](https://coderpad.io/ "Coder Pad"), a white-board development environment for coding exams.
-- https://app.codility.com/demo/take-sample-test/, like coderpad, the codility web site is a testing environment offering practice problems.
-- [https://www.pramp.com/#/](https://www.pramp.com/#/ "Pramp"), an interactive coding interview environment for practicing coding interviews.
-
-Additional support for testing SQL programming, which is heavily used in Data Engineering, includes these sites that run MySQL sandboxes:
-- SQL runner only: [https://paiza.io/projects/featured?language=mysql](https://paiza.io/projects/featured?language=mysql).
-- SQL skills testing: [https://coderpad.io/demo](https://coderpad.io/demo) and the practice sandbox [https://coderpad.io/sandbox](https://coderpad.io/sandbox).
-
-Finally, must of the Python content of this repository is concerned with *Apache Spark*, and a good free Spark implementation is hosted by Databricks (the community edition) found at  https://databricks.com/try-databricks.
-
-#### *DemoDev* Content Commercial Opportunities
-
-Please contact _Donald Trummell_ via Email using dtrummell@gmail.com for additional information regarding commercial use of projects in this repository.  His LinkedIn profile is found at [http://www.linkedin.com/in/donaldtrummell/](http://www.linkedin.com/in/donaldtrummell/ "here"). You may review the published form of this documentation at the "pretty view" [http://donaldet.github.io/DemoDev/](http://donaldet.github.io/DemoDev/).
+Please contact _Donald Trummell_ via Email using dtrummell@gmail.com for additional information regarding commercial use of projects in this repository.  His LinkedIn profile is found at [http://www.linkedin.com/in/donaldtrummell/](http://www.linkedin.com/in/donaldtrummell/ "here"). You may review the published form of this documentation at the "pretty view" [http://donaldet.github.io/FullSail/](http://donaldet.github.io/FullSail/).
 
 # Getting Started
 
 All the information needed to build these projects is detailed in the _BuildResources_ document described below.  The process you will follow is:
  1. Download required build dependencies (e.g., Java, MAVEN, and optionally ANT)
  2. Install and test the build dependencies
- 3. Fork or download the source code from the GitHub repository (see [http://www.github.com/DonaldET/DemoDev/](http://www.github.com/DonaldET/DemoDev/ "the source repo"))
+ 3. Fork or download the source code from the GitHub repository (see [http://www.github.com/DonaldET/FullSail/](http://www.github.com/DonaldET/FullSail/ "the source repo"))
  4. On the command line, from the downloaded base directory, execute:
     _mvn clean install_
 
-The _StaticResources_ directory references instructions on how to setup a MAVEN and JAVA build environment in document _BuildResources.pdf_. It is a **GITHUB** hosted document that also contains links back to this source code repository (*DemoDev*).
-
-## *DemoDev* Sub-Project Categories
-
-*DemoDev* is composed of multiple sub-projects, with each sub-project having a README.md file offering information about the sub-project and its contents.  Interesting sub-projects include:
-
-- *algorithms*: Math algorithm demonstrations.
-- *codingexams*: Coding and Algorithm interview questions asked over a whiteboard or in a collaboration environment coding environment.
-- *hacks*: Unusual solutions to interesting problems that don't necessarily reflect _best practices_.
-- *jerseyservices*: RESTful Java service implementations using the **Jersey framework**
-- *memoryindexing*: In-memory search algorithms
-- *utils*: Utilities used by _DemoDev_ and related projects (e.g., code generation used by _WindPower Explorer_)
-
-
-## Sub-Project Structure
-
-Sub-projects usually include a _business_ motivation for the coding examples in this section of the repository.  The examples also show good _OO design principals_, such as _KISS_, _DRY_ (don't repeat yourself), and _SOLID_ (Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion.) This site violates _YAGNI_ for educational purposes. Spring has a very readable overview of the *Liskov Substitution Principle* (see <https://springframework.guru/principles-of-object-oriented-design/liskov-substitution-principle/>.)
-
-The sub-projects have their _JavaDoc_ entries explaining their role in the solution and the portion of the problem they address. Many sub-projects include JUnit tests because this reflects good _TDD_ practice and allows maintenance of the examples over time.  Stability over time is accomplished by using the regression aspect of these tests.
-
-Many of the projects appear _complicated_ by use of the *Spring* framework to solve a potentially simple problem.  This is done to illustrate _Spring_ usage in addition to the basic techniques shown in the example. Overall, a professional Software Engineer would provide background for the code, some guidelines on usage in the _JavaDoc_ entries, and tips to help maintain the code.  The example invocations within unit tests help in achieving these documentation goals.
-
-## Build Information
+The _StaticResources_ directory references instructions on how to setup a MAVEN and JAVA build environment in document _BuildResources.pdf_. It is a **GITHUB** hosted document that also contains links back to this source code repository (*FullSail*).## Build Information
 Naming and structural conventions, along with collected statistics on Maven build structure. Key Maven plugins are documented as well.
 
 ### Java Package Naming Conventions
