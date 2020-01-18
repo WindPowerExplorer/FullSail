@@ -1,6 +1,6 @@
 # Welcome
 
-The software associated with the ***Wind Power Explorer*** is located in this (the [http://www.github.com/DonaldET/FullSail/](http://www.github.com/DonaldET/FullSail/ "FullSail") ) repository. This repository also depends on components developed in the [https://github.com/DonaldET/DemoDev/](https://github.com/DonaldET/DemoDev/ "DemoDev repo"). This software aids in planning a Wind Farm, which is a collection of Wind Generators placed in fixed positions on a rectangular grid of (nearly) flat land or over the ocean.
+The software associated with the ***Wind Power Explorer*** is located in this the [https://github.com/WindPowerExplorer/FullSail](https://github.com/WindPowerExplorer/FullSail "FullSail") repository. This repository also depends on components developed in the [https://github.com/DonaldET/DemoDev/](https://github.com/DonaldET/DemoDev/ "DemoDev repo"). This software aids in planning a Wind Farm, which is a collection of Wind Generators placed in fixed positions on a rectangular grid of (nearly) flat land or over the ocean.
 
 #### Background of Need
 
