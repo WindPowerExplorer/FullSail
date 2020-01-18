@@ -1,18 +1,27 @@
 # Welcome
 
-The software associated with the ***Wind Power Explorer*** is located in this the [https://github.com/WindPowerExplorer/FullSail](https://github.com/WindPowerExplorer/FullSail "FullSail") repository. This repository also depends on components developed in the [https://github.com/DonaldET/DemoDev/](https://github.com/DonaldET/DemoDev/ "DemoDev repo"). This software aids in planning a Wind Farm, which is a collection of Wind Generators placed in fixed positions on a rectangular grid of (nearly) flat land or over the ocean.
+The software associated with the ***Wind Power Explorer*** is located in this the [https://github.com/WindPowerExplorer/FullSail](https://github.com/WindPowerExplorer/FullSail "FullSail") repository. This repository also depends on components developed in the [https://github.com/DonaldET/DemoDev/](https://github.com/DonaldET/DemoDev/ "DemoDev") repository. This software aids in planning a Wind Farm, which is a collection of Wind Generators placed in fixed positions on a rectangular grid of (nearly) flat land, or over the ocean. We are interested in understanding the power generation characteristics of a wind farm.
 
 #### Background of Need
 
-Because there are large capital investments required to create a wind farm, and significant regulatory compliance issues, it is important to optimize power output for a given investment. Investors must be assured of the eventual payoff for investing in the farm. These goals are achieved with good data about predicted power generation.
+Because there are large capital investments required to create a wind farm, and significant regulatory compliance issues, it is important to optimize power output for a given investment. Investors must be assured of the eventual payoff for investing in the wind farm. These goals are achieved with good data about predicted power generation.
 
-These *FullSail* projects help evaluate the prospective power output of a Wind Farm. A *Wind Farm* is a collection of *Wind Generators* that output electrical power of a long period of time. The power output varies depending on wind characteristics, generator characteristics, and individual generator placement. 
+These *FullSail* projects help planners evaluate the prospective power output of a Wind Farm. A *Wind Farm* is a collection of *Wind Generators* that output saleable electrical power of a long period of time. The power output of this collection of wind generators varies depending on:
 
-Unfortunately, data for validating the economics of a particular wind farm site are difficult to obtain. Since complete wind characteristics are often unavailable, and the Engineering models of wind power generation are often complicated, it is difficult to perform an exact power analysis. Most of detailed engineering analyses are compute-intensive, and solved on a single machine, so large time periods (e.g., a year) are not typically simulated. One is forced to reason about Wind Farm power output over a long period of capitalization by using short time periods and hoping the results are representative of the time period under study.
+- wind characteristics,
+- generator characteristics,
+- topography,
+- and individual generator placement. 
+
+Unfortunately, data for validating the economics of a particular wind farm site are difficult to obtain. Since complete wind characteristics are often unavailable, and the Engineering models of wind power generation are often complicated, it is difficult to perform an accurate power analysis. Most of detailed engineering analyses are compute-intensive, and solved on a single machine, so large time periods (e.g., a year) are not typically simulated. One is forced to reason about Wind Farm power output over a long period of capitalization by using short time period simulations and hoping the results are representative of the time period under study.
 
 #### The *FullSail* Approach
 
-FullSail applies "Big Data" concepts and TBD
+FullSail applies "Big Data" concepts and TBD.
+
+#### FullSail Simulation Capabilities
+
+TBD.
 
 #### Repository Contents
 
