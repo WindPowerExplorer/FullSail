@@ -1,23 +1,23 @@
 # Welcome
 
-The software associated with the ***Wind Power Explorer*** is located in this the [https://github.com/WindPowerExplorer/FullSail](https://github.com/WindPowerExplorer/FullSail "FullSail") repository. This repository also depends on components developed in the [https://github.com/DonaldET/DemoDev/](https://github.com/DonaldET/DemoDev/ "DemoDev") repository. This software aids in planning a Wind Farm, which is a collection of Wind Generators placed in fixed positions on a rectangular grid of (nearly) flat land, or over the ocean. We are interested in understanding the power generation characteristics of a wind farm.
+The ***FullSail*** repository houses the software associated with the ***Wind Power Explorer*** project (hosted at [https://github.com/WindPowerExplorer/FullSail](https://github.com/WindPowerExplorer/FullSail "FullSail")). The code here also depends on components developed in the ***DemoDev*** repository hosted at [https://github.com/DonaldET/DemoDev/](https://github.com/DonaldET/DemoDev/ "DemoDev"). The *Wind Power Explorer*, or *WPE*, aids in planning a Wind Farm, which is a collection of Wind Generators. Many Wind Generators (Wind Turbines) are placed in fixed positions on a rectangular grid of (nearly) flat land, or over the ocean. Wind Generators are mostly horizontal axis types. *WPE* are interested in understanding the power generation characteristics of a wind farm to inform investors and planners capitalizing the venture, what power generation potential is possible.
 
-#### Background of Need
+#### Description of *WPE* Need
 
 Because there are large capital investments required to create a wind farm, and significant regulatory compliance issues, it is important to optimize power output for a given investment. Investors must be assured of the eventual payoff for investing in the wind farm. These goals are achieved with good data about predicted power generation.
 
-These *FullSail* projects help planners evaluate the prospective power output of a Wind Farm. A *Wind Farm* is a collection of *Wind Generators* that output saleable electrical power of a long period of time. The power output of this collection of wind generators varies depending on:
+Our *FullSail* software helps planners evaluate the prospective power output of a Wind Farm. A *Wind Farm* is a collection of *Wind Generators* that output saleable electrical power over a long period of time. The power output of this collection of wind generators varies depending on:
 
 - wind characteristics,
 - generator characteristics,
 - topography,
 - and individual generator placement. 
 
-Unfortunately, data for validating the economics of a particular wind farm site are difficult to obtain. Since complete wind characteristics are often unavailable, and the Engineering models of wind power generation are often complicated, it is difficult to perform an accurate power analysis. Most of detailed engineering analyses are compute-intensive, and solved on a single machine, so large time periods (e.g., a year) are not typically simulated. One is forced to reason about Wind Farm power output over a long period of capitalization by using short time period simulations and hoping the results are representative of the time period under study.
+Unfortunately, data for validating the economics of a particular wind farm site are difficult to obtain. Since complete wind characteristics are often unavailable, and the Engineering models of wind power generation are often complicated, it is difficult to perform an accurate power analysis. Most of detailed engineering analyses are compute-intensive, and solved on a single computer, so long time periods (e.g., a year) are not typically simulated. One is forced to reason about Wind Farm power output over a long period of capitalization by using short time period simulations and hoping the results are representative of the time period under study.
 
-#### The *FullSail* Approach
+#### The *FullSail* Approach to Wind Farm Power Output Assessment
 
-FullSail applies "Big Data" concepts and TBD.
+FullSail applies "Big Data" and cloud-native application concepts to enable a robust simulation of wind characteristics and power generation simulation. Applying these approaches allows TBD
 
 #### FullSail Simulation Capabilities
 
@@ -56,7 +56,19 @@ All the information needed to build these projects is detailed in the _BuildReso
  4. On the command line, from the downloaded base directory, execute:
     _mvn clean install_
 
-The _StaticResources_ directory references instructions on how to setup a MAVEN and JAVA build environment in document _BuildResources.pdf_. It is a **GITHUB** hosted document that also contains links back to this source code repository (*FullSail*).## Build Information
+The _StaticResources_ directory references instructions on how to setup a MAVEN and JAVA build environment in document _BuildResources.pdf_. It is a **GITHUB** hosted document that also contains links back to this source code repository (*FullSail*).
+
+## Wind Power Description
+
+A wind farm is a capital-intensive mechanism to generate large-scale electrical power from these major components.
+
+###### Wind Generator (taken from [http://me1065.wikidot.com/types-of-wind-turbines-and-associated-advantages](http://me1065.wikidot.com/types-of-wind-turbines-and-associated-advantages).)
+
+Horizontal axis wind turbines are the most common type used (see figure 1). All of the components (blades, shaft, generator) are on top of a tall tower, and the blades face into the wind. The shaft is horizontal to the ground. The wind hits the blades of the turbine that are connected to a shaft causing rotation. The shaft has a gear on the end which turns a generator. The generator produces electricity and sends the electricity into the power grid. The wind turbine also has some key elements that adds to efficiency. Inside the Nacelle (or head) is an anemometer, wind vane, and controller that read the speed and direction of the wind. As the wind changes direction, a motor (yaw motor) turns the nacelle so the blades are always facing the wind. The power source also comes with a safety feature. In case of extreme winds the turbine has a break that can slow the shaft speed. This is to inhibit any damage to the turbine in extreme conditions.
+
+###### Turbine Wake
+
+**TBD**## Build Information
 Naming and structural conventions, along with collected statistics on Maven build structure. Key Maven plugins are documented as well.
 
 ### Java Package Naming Conventions
