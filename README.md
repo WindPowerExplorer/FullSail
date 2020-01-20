@@ -80,3 +80,7 @@ These Maven plugins are used in the build structure to achieve build tasks.
 ### Detailed Build Statistics
 
 **TBD**
+
+
+
+Observability: https://www.splunk.com/pdfs/ebooks/beginners-guide-to-observability.pdf
