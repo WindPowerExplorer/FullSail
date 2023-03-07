@@ -9,7 +9,7 @@ Because large capital investments are required to create a wind farm, and there 
 Our *FullSail* software helps planners evaluate the prospective power output of a Wind Farm. A *Wind Farm* is a collection of *Wind Generators* that output saleable electrical power over a long period of time. The power output of this collection of wind generators varies depending on:
 
 - wind characteristics,
-- generator characteristics,
+- wind generator characteristics,
 - topography,
 - and individual generator placement. 
 
